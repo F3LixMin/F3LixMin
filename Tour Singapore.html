@@ -1,6 +1,8 @@
 <html>
 <link rel="stylesheet" type="text/css" href="Cssfolders/Chinatown.css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <head>
     <title>
         Home Page
@@ -9,6 +11,7 @@
 
 <body>
     <header>
+        <div class="top-nav">
         <div class="logo">
             <!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -41,24 +44,28 @@
             </svg>
 
         </div>
-        <nav class="nav">
-
-            <a class="home" href="index.html">Home</a> |
-            <div class="dropdown">
-                <a href="#">Tour Package</a> |
-                <div class="drpdw-content">
-                    <a class="link1" href="Tour Singapore.html">ChinaTown Murders (牛车水杀人案）</a>
-                    <a class="link2" href="Jewel.html">Best of Jewel</a>
-                    <a class="link3" href="#">Tour Package 3</a>
-                </div>
-            </div>
-            <a class="Rediscovery" href="#">Package Rediscover Singapore</a> |
-            <a class="Cruise" href="#">Package Cruises</a> |
-            <a class="Contact" href="#">Contact Us</a> |
-
-
-
-
+        <nav>
+            <ul class='nav-bar'>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    
+                        <li><a href="" class="drp">Package Rediscover Singaproe</a></li>
+                        <div class="drpcontent">
+                            <a href="Tour Singapore.html">Chinatown</a>
+                            <br><br>
+                            <a href="Jewel.html">Jewel Airport</a>
+                            <br><br>
+                            <a href="#">Gardens by the Bay</a>
+                        </div>
+                 
+                    <li><a href="">Package Rediscovery Singapore</a></li>
+                    <li><a href="">Package Cruise</a></li>
+                    <li><a href="">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
     </header>
     <h1 class="title">Tour Singapore is here!</h1>
@@ -66,27 +73,32 @@
         <div class="container">
 
             <article>
-                <div class="center">
-                    <h1>ChinaTown Murders (牛车水杀人案）</h1>
-                    <a>Chinatown Murders is a game tour by Tribe where participants are thrown into a scenario to solve
-                        puzzles. The scene is set in Chinatown where a serial killer is on the loose and the whole
-                        nation is gripped with fear. Participants are roped in to find the killer by solving a series of
-                        puzzles around Chinatown. Participants will be grouped into teams of 2-5 persons and will
-                        determine the route they take and the choice of items to pick. Narrated by a tourist guide/game
-                        master, the guide will be in character throughout the tour, as someone with strong ties in
-                        Chinatown having lived there for 48 years. The guide will also be sharing their affiliation
-                        through the people whom they grew up with.
-                    </a>
-                    <br />
-                    <img src="images/chinatown-murders-1000x1000.jpg" alt="SG" class="img">
+                <div class="card">
+                    <div class="center">
+                        <h1>ChinaTown Murders (牛车水杀人案）</h1>
+                        <a>Chinatown Murders is a game tour by Tribe where participants are thrown into a scenario to
+                            solve
+                            puzzles. The scene is set in Chinatown where a serial killer is on the loose and the whole
+                            nation is gripped with fear. Participants are roped in to find the killer by solving a
+                            series of
+                            puzzles around Chinatown. Participants will be grouped into teams of 2-5 persons and will
+                            determine the route they take and the choice of items to pick. Narrated by a tourist
+                            guide/game
+                            master, the guide will be in character throughout the tour, as someone with strong ties in
+                            Chinatown having lived there for 48 years. The guide will also be sharing their affiliation
+                            through the people whom they grew up with.
+                        </a>
+                        <br />
+                        <img src="images/chinatown-murders-1000x1000.jpg" alt="SG" class="img">
+                    </div>
                 </div>
             </article>
             <br />
-            
+
         </div>
         </article>
         </div>
-
+    </div>
 
     </section>
 
@@ -95,6 +107,7 @@
     <video class="bgvideo" loop autoplay muted noremoteplayback>
         <source src="bridge.mp4" type="video/mp4">
     </video>
+    <img class="sky" src="images/sky.jpg" alt="sky">
     <br />
 
     <div class="footer">

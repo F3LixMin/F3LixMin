@@ -1,5 +1,8 @@
 <html>
 <link rel="stylesheet" type="text/css" href="Cssfolders/Jewel.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <head>
     <title>
@@ -39,43 +42,50 @@
     c2.98,5.25,5.25,9.3,7.39,13.6h0.36c2.27-4.77,4.29-8.47,7.28-13.6l10.97-18.84h11.93l-24.45,39.12l25.04,41.26H211.97z" />
                 </g>
             </svg>
-
         </div>
-        <nav class="nav">
-
-            <a class="home" href="index.html">Home</a> |
-            <div class="dropdown">
-                <a href="#">Tour Package</a> |
-                <div class="drpdw-content">
-                    <a class="link1" href="Tour Singapore.html">ChinaTown Murder (牛车水杀人案）</a>
-                    <a class="link2" href="Jewel.html">Best of Jewel</a>
-                    <a class="link3" href="#">Tour Package 3</a>
-                </div>
-            </div>
-            <a class="Rediscovery" href="#">Package Rediscover Singapore</a> |
-            <a class="Cruise" href="#">Package Cruises</a> |
-            <a class="Contact" href="#">Contact Us</a> |
-
-
-
-
-        </nav>
+            <nav>
+                <ul class='nav-bar'>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <div class="dropdown">
+                            <li><a href="" class="drp">Package Rediscover Singaproe</a></li>
+                            <div class="drpcontent">
+                                <a href="Tour Singapore.html">Chinatown</a>
+                                <br><br>
+                                <a href="Jewel.html">Jewel Airport</a>
+                                <br><br>
+                                <a href="#">Gardens by the Bay</a>
+                            </div>
+                        </div>
+                        <li><a href="">Package Rediscovery Singapore</a></li>
+                        <li><a href="">Package Cruise</a></li>
+                        <li><a href="">Contact</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
     </header>
     <h1 class="title">Tour Singapore is here!</h1>
     <section>
         <div class="container">
 
             <article>
-                <div class="left">
-                    <h1>Best of Jewel </h1>
-                    <a>Walk around this architectural marvel that’s both an airport terminal and a shopping mall and
-                        check out eye-catching attractions like the 40-metre-high HSBC Rain Vortex, the world's tallest
-                        indoor waterfall. You will also be able to visit a wide array of shops with interesting
-                        collectables, and have a chance to experience delightful snacks at heritage brands like Bengawan
-                        Solo – a household name known for its traditional cakes and kueh (bite-sized desserts).
-                    </a>
-                    <br />
-                    <img src="images/best-of-jewel-2000-1000x1000.jpg" alt="SG" class="img">
+                <div class="card">
+                    <div class="left">
+                        <h1>Best of Jewel </h1>
+                        <a>Walk around this architectural marvel that’s both an airport terminal and a shopping mall and
+                            check out eye-catching attractions like the 40-metre-high HSBC Rain Vortex, the world's
+                            tallest
+                            indoor waterfall. You will also be able to visit a wide array of shops with interesting
+                            collectables, and have a chance to experience delightful snacks at heritage brands like
+                            Bengawan
+                            Solo – a household name known for its traditional cakes and kueh (bite-sized desserts).
+                        </a>
+                        <br />
+                        <img src="images/best-of-jewel-2000-1000x1000.jpg" alt="SG" class="img">
+                    </div>
                 </div>
             </article>
             <br />
@@ -101,7 +111,7 @@
             <p>Contact us: <a href=”mailto:info@WorldExp.com”> <u> Email US </u> </a>
         </footer>
     </div>
-
+    <img class="sky" src="images/sky.jpg" alt="sky">
 
 </body>
 
