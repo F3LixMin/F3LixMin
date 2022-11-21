@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="Cssfolders/mobileindex.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <head>
     <title>
         Home Page
@@ -53,13 +54,13 @@
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
-                  </a>
+                </a>
             </div>
             <a class="Rediscovery" href="#">Package Rediscover Singapore</a> |
             <a class="Cruise" href="#">Package Cruises</a> |
             <a class="Contact" href="#">Contact Us</a> |
         </div>
-       
+
 
 
 
@@ -127,10 +128,17 @@
             <p>Contact us: <a href=”mailto:info@WorldExp.com”> <u> Email US </u> </a>
         </footer>
     </div>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
-
-
 
 </html>
