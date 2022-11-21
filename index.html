@@ -1,5 +1,10 @@
 <html>
 <link rel="stylesheet" type="text/css" href="Cssfolders/index.CSS" />
+<link rel="stylesheet" type="text/css" href="Cssfolders/nav.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 <head>
     <title>
@@ -41,24 +46,19 @@
             </svg>
 
         </div>
-        <nav class="nav">
-
-            <a class="home" href="index.html">Home</a> |
-            <div class="dropdown">
-                <a href="#">Tour Package</a> |
-                <div class="drpdw-content">
-                    <a class="link1" href="Tour Singapore.html"> </a>
-                    <a class="link2" href="Jewel.html">Best of Jewel</a>
-                    <a class="link3" href="#">Tour Package 3</a>
-                </div>
-            </div>
-            <a class="Rediscovery" href="#">Package Rediscover Singapore</a> |
-            <a class="Cruise" href="#">Package Cruises</a> |
-            <a class="Contact" href="#">Contact Us</a> |
-
-
-
-
+        <nav>
+            <ul class='nav-bar'>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
     </header>
     <h1 class="title">Find out MORE</h1>
@@ -113,6 +113,7 @@
     <video class="bgvideo" loop autoplay muted noremoteplayback>
         <source src="bridge.mp4" type="video/mp4">
     </video>
+    
     <br />
 
     <div class="footer">

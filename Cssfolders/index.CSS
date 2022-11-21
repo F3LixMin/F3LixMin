@@ -13,6 +13,7 @@
 img{
    width: 350px;
    height: 300px;
+   margin: auto 0;
 }
 
 footer{
@@ -30,21 +31,6 @@ text-align: center;
 .img:hover{
    filter: grayscale(100%);
 }
-
-
-nav {
-   background-color: rgb(16, 211, 211);
-   
-   left: 10px;
-   top: 5px;
-   right: 10px;
-   width: 100%;
-   padding: 50px, 50px;
-   align-items: top;
-   text-align: right;
-   
-}
-
 .home:hover{
    width: 100px;
    height: 100px;
@@ -75,15 +61,6 @@ nav {
    background-color: rgb(204, 104, 243);
 }
 
-.nav {
-   
-   display: inline-block;
-   font-size: 20px;
-   padding: 20px;
-   color: darkslateblue;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-}
 
 .bgvideo {
    position: fixed;
@@ -94,10 +71,6 @@ nav {
    z-index: -1;
 }
 
-body {
-   padding: 1%;
-   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 
 * {
    box-sizing: border-box;
@@ -150,4 +123,28 @@ body {
 }
 .dropdown:hover .drpdw-content {
    display: block;
+ }
+ @media only screen and (max-width: 600px){
+   .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: var(--color2);
+      transition: all 0.2s ease-in-out;
+  }
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
+
+
+   .bgvideo{
+      display: none;
+   }
  }

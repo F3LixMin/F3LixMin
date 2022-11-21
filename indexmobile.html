@@ -1,9 +1,13 @@
 <html>
-<link rel="stylesheet" type="text/css" href="Cssfolders/mobileindex.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 <head>
+    <link rel="stylesheet" type="text/css" href="Cssfolders/mobileindex.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Home Page
     </title>
@@ -43,23 +47,20 @@
             </svg>
 
         </div>
-        <div class="topnav">
-            <a class="home" href="index.html">Home</a> |
-            <div class="dropdown">
-                <a href="#">Tour Package</a> |
-                <div class="drpdw-content">
-                    <a class="link1" href="Tour Singapore.html">Chinatown</a>
-                    <a class="link2" href="Jewel.html">Best of Jewel</a>
-                    <a class="link3" href="#">Tour Package 3</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <a class="Rediscovery" href="#">Package Rediscover Singapore</a> |
-            <a class="Cruise" href="#">Package Cruises</a> |
-            <a class="Contact" href="#">Contact Us</a> |
-        </div>
+        <nav>
+            <ul class='nav-bar'>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Tour Package</a></li>
+                    <li><a href="">Package Redicover Singapore</a></li>
+                    <li><a href="">Package Cruise</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
 
 
 
@@ -68,47 +69,61 @@
         </nav>
     </header>
     <h1 class="title">Find out MORE</h1>
+    <br><br>
     <section>
         <div class="container">
-            <article>
-                <div class="left">
-                    <h1>Rediscovery Singapore</h1>
-                    <a>
-                        Looking for new ways to experience Singapore, with the people who matter most? Here are curated
-                        itineraries that will help you rediscover the magic at your doorstep – and uncover deeper
-                        connections. Explore Singapore safely while keeping up with the latest Covid-19 measures
-                    </a>
-                    <br />
-                    <img src="images/Marina.jpg" alt="Marina" class="img">
-                </div>
-            </article>
-            <article>
-                <div class="center">
-                    <h1>Package Tours</h1>
-                    <a>Hiring a tour agency in Explore World has plenty of benefits when planning to go on a vacation
-                        overseas.
-                        Imagine the hassle of planning every detail of your trip, from looking out of flight deals to
-                        searching
-                        for decent hotels to arranging itinerary during your vacation. It requires a lot of time to
-                        finalise
-                        everything, in fact, some details might even change when you’re already in your destination.
-                    </a>
-                    <br />
-                    <img src="images/Singaproe.jpg" alt="SG" class="img">
-                </div>
-            </article>
-            <article>
-                <div class="right">
-                    <h1>Package Cruises</h1>
-                    <a>You don’t have to travel far for an incredible vacation. Cruise from a port near you to top-rated
-                        vacation destinations in the tropics and beyond. No matter where in the world you’re sailing
-                        from,
-                        you’ll find plenty of deals on epic itineraries sailing right from your backyard.
-                    </a>
-                    <br />
-                    <img src="images/th.jpg" alt="Cruise" class="img">
-                </div>
-            </article>
+            <div class="card">
+                <article>
+                    <div class="left">
+                        <h1>Rediscovery Singapore</h1>
+                        <a>
+                            Looking for new ways to experience Singapore, with the people who matter most? Here are
+                            curated
+                            itineraries that will help you rediscover the magic at your doorstep – and uncover deeper
+                            connections. Explore Singapore safely while keeping up with the latest Covid-19 measures
+                        </a>
+                        <br />
+                        <img src="images/Marina.jpg" alt="Marina" class="img">
+                    </div>
+                </article>
+            </div>
+            <br><br>
+            <div class="card">
+                <article>
+                    <div class="center">
+                        <h1>Package Tours</h1>
+                        <a>Hiring a tour agency in Explore World has plenty of benefits when planning to go on a
+                            vacation
+                            overseas.
+                            Imagine the hassle of planning every detail of your trip, from looking out of flight deals
+                            to
+                            searching
+                            for decent hotels to arranging itinerary during your vacation. It requires a lot of time to
+                            finalise
+                            everything, in fact, some details might even change when you’re already in your destination.
+                        </a>
+                        <br>
+                        <img src="images/Singaproe.jpg" alt="SG" class="img">
+                    </div>
+                </article>
+            </div>
+            <br><br>
+            <div class="card">
+                <article>
+                    <div class="right">
+                        <h1>Package Cruises</h1>
+                        <a>You don’t have to travel far for an incredible vacation. Cruise from a port near you to
+                            top-rated
+                            vacation destinations in the tropics and beyond. No matter where in the world you’re sailing
+                            from,
+                            you’ll find plenty of deals on epic itineraries sailing right from your backyard.
+                        </a>
+                        <br />
+                        <img src="images/th.jpg" alt="Cruise" class="img">
+                    </div>
+                </article>
+            </div>
+        </div>
         </div>
 
 
